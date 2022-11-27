@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root "pages#home"
   get 'distance', to: 'pages#distance'
+  get 'calculated', to: 'pages#calculated'
 end
