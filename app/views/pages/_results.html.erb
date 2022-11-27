@@ -1,4 +1,9 @@
-<div class="container my-3">
+<div class="container d-flex gap-5 my-3 shadow text-bg-secondary rounded">
+  <div>
   <p><strong>Straight line distance:</strong> <%= @rhumb_dist.round %> Kilometers</p>
   <p><strong>Great circle distance:</strong> <%= @great_circle.round %> Kilometers</p>
+  </div>
+  <div class="d-flex align-items-center">
+    <p>If you followed a straight line you would travel <strong><%= @rhumb_dist.round - @great_circle.round %></strong> kilometers more</p>
+  </div>
 </div>
